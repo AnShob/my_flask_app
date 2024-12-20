@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Genre Buku</title>
+    <link rel="stylesheet" href="/static/hehe.css">
+    <script src="/static/scroll.js"></script>
+    <script>
+        // Fungsi untuk scroll otomatis ke bawah setelah prediksi
+        window.onload = function() {
+            if (document.getElementById('genre-prediction')) {
+                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });  // Scroll ke bawah halaman
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Gambar Header -->
+            <img src="static/Gambar/crypto (1).png" alt="Logo" class="centered-image">
+            
+            <h1>Cek Genre Berdasarkan Sinopsis</h1>
+            <p>Kami akan membantu Anda menentukan genre yang paling tepat.</p>
+        </div>
+    </header>
+    <form method="POST" action="/">
+        <label for="Sinopsis">Masukkan Sinopsis:</label>
+        <textarea name="Sinopsis" id="Sinopsis" rows="15" cols="100" onfocus="clearText()" onblur="restoreText()">Ketik sinopsis di sini...</textarea><br><br>
+        <button type="submit">Cek Genre</button>
+    </form>
+
+    {% if Sinopsis is not none %}
+        <h2>Hasil</h2>
+        <p>Genre : {{ Genre }}</p>
+        <!-- Berikan ID agar bisa di scroll ke bawah -->
+        <div id="genre-prediction"></div>>
+    {% elif Sinopsis is not none %}
+        <p>Masukkan Sinopsis yang jelas</p>
+    {% endif %}
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Regex Team. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1; /* Warna latar belakang cerah */
+    color: #333;
+}
+
+/* Center Content */
+/* Center Content */
+.container {
+    max-width: 600px; /* Maksimal lebar container */
+    margin: 40px auto; /* Memusatkan container dengan jarak atas dan bawah */
+    padding: 30px; /* Jarak isi container dari tepi */
+    background: #F0BB78; /* Warna latar belakang container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    border-radius: 12px; /* Membuat sudut container melengkung */
+    text-align: center; /* Memastikan teks di dalam container berada di tengah */
+}
+
+/* Gambar di tengah */
+.centered-image {
+    max-width: 50%; /* Membuat gambar responsif */
+    height: 100px; /* Menjaga rasio aspek gambar */
+    display: block; /* Agar gambar menjadi elemen blok dan mengambil seluruh lebar */
+    margin: 0 auto 0; /* Menambahkan margin bawah agar ada jarak antara gambar dan teks */
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d32f2f; /* Warna merah cerah ala McDonald's */
+    font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    color: #666;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label Styles */
+label {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #f57c00; /* Warna oranye cerah */
+}
+
+/* Input Box Modern Styles */
+input[type="number"] {
+    padding: 14px;
+    margin: 100px 0 100px;
+    border: none;
+    border-bottom: 2px solid #f57c00;/*Garisbawahdenganwarnaoranye*/
+    background: transparent; /*Menghilangkanbackgroundboxinput*/
+    font-size: 18px;
+    width: 100%;
+    max-width: 320px;
+    outline: none;
+    transition: all 0.3s ease; /* Animasi transisi pada input */;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+textarea {
+    resize: none; /* Menonaktifkan perubahan ukuran textarea */
+}
+
+
+/* Input Focus Effect */
+input[type="number"]:focus {
+    border-bottom-color: #007bff; /* Ubah warna garis bawah saat fokus */
+    box-shadow: 0 1px 5px rgba(0, 123, 255, 0.5); /* Efek bayangan saat fokus */
+    transform: scale(1.05); /* Efek zoom saat fokus */
+}
+
+/* Input Hover Effect */
+input[type="number"]:hover {
+    border-bottom-color: #f57c00; /* Ubah warna garis bawah saat hover */
+    transform: scale(1.02); /* Sedikit efek zoom saat hover */
+}
+
+/* Button Styles */
+button {
+    padding: 14px;
+    margin: 0px 0 50px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #f57c00;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    max-width: 320px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+     /* Animasi untuk button */;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+button:hover {
+    background-color: #e65100; /* Warna button lebih gelap saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Results Section */
+h2 {
+    font-size: 22px;
+    margin-top: 0px;
+    text-align: center;
+    color: #d32f2f; /* Warna merah cerah */
+}
+
+/* Links */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #f57c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e65100;
+}
+
