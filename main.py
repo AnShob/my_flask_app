@@ -12,7 +12,7 @@ MODEL_FILE_URL = "https://drive.google.com/uc?id=1u2iPYR4KShHTCDZV3SErWbx560k5BY
 
 # File names
 MODEL_FILE_NAME = 'svm_model(RBF).pkl'
-VECTORIZER_FILE_NAME = 'tfidf_vectorizer.pkl'
+# VECTORIZER_FILE_NAME = 'tfidf_vectorizer.pkl'
 
 
 def download_file(url, file_name):
@@ -40,7 +40,7 @@ except Exception as e:
 with open(MODEL_FILE_NAME, 'rb') as model_file:
     loaded_model = pickle.load(model_file)
 
-with open(VECTORIZER_FILE_NAME, 'rb') as vectorizer_file:
+with open('tfidf_vectorizer.pkl', 'rb') as vectorizer_file:
     loaded_vectorizer = pickle.load(vectorizer_file)
 
 # Preprocessor instance
