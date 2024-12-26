@@ -7,7 +7,7 @@ import os
 import requests
 
 # Google Drive file IDs
-MODEL_FILE_URL = "https://drive.google.com/uc?id=xyUxJAoHSsflkGjGQUqPGwF9cVgvkwj"
+MODEL_FILE_URL = "https://drive.google.com/uc?id=1u2iPYR4KShHTCDZV3SErWbx560k5BYce"
 # VECTORIZER_FILE_URL = "https://drive.google.com/uc?id=<file_id_vectorizer>"
 
 # File names
