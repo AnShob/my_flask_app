@@ -43,5 +43,6 @@ if st.button("Prediksi Genre"):
             prediksi = loaded_model.predict(sinopsis_tfidf.toarray())
             st.success(f"Genre yang diprediksi: **{prediksi[0]}**")
         except Exception as e:
-            st.error(f"Error: {e}")
+            st.write("Checkpoint: Preprocessor instance dibuat")
+
 
