@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 from joblib import load
 from preprosesing import Preprocessor
+import nltk
+
+# Download stopwords jika belum tersedia
+nltk.download('stopwords')
 
 # Memuat model SVM
 loaded_model = load('svm_model(RBF).joblib')
