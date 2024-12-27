@@ -10,14 +10,6 @@ class Preprocessor:
         self.sinopsis_column = sinopsis_column
         self.stop_words = set(stopwords.words('english'))
         self.lemmatizer = WordNetLemmatizer()
-        
-    def preprocess_dataframe(self, df):
-        if self.sinopsis_column not in df.columns:
-            raise ValueError(f"Kolom {self.sinopsis_column} tidak ditemukan.")
-        # Lakukan preprocessing seperti tokenisasi, stemming, atau lainnya
-        df['Processed'] = df[self.sinopsis_column].apply(lambda x: ' '.join(nltk.word_tokenize(x)))
-        return df['Processed']
-
     
     def lowercasing(self, df):
         df[self.sinopsis_column] = df[self.sinopsis_column].str.lower()
