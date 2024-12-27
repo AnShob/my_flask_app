@@ -6,7 +6,13 @@ import os
 from preprosesing import Preprocessor
 
 # Menentukan lokasi data NLTK
-nltk_data_path = os.path.join(os.path.dirname(__file__), 'punkt')
+# Mendapatkan path direktori file skrip yang sedang dijalankan
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Path ke folder 'punkt'
+nltk_data_path = os.path.join(current_dir, 'punkt')
+
+# Menambahkan path ke NLTK
 nltk.data.path.append(nltk_data_path)
 
 # Pastikan dataset NLTK tersedia
