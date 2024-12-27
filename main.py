@@ -6,6 +6,7 @@ import nltk
 
 # Download stopwords jika belum tersedia
 nltk.download('stopwords')
+nltk.download('punkt')
 
 # Memuat model SVM
 loaded_model = load('svm_model(RBF).joblib')
