@@ -40,10 +40,14 @@ if st.button("Prediksi Genre"):
         
         # Preprocessing data baru
         try:
-            st.write("Input DataFrame:", data_baru)
-            data_baru = preprocessor.preprocess_dataframe(data_baru)
-            st.write("Setelah Preprocessing:", data_baru)
-        
+            sst.write("Input DataFrame sebelum preprocessing:", data_baru)
+            try:
+                data_baru = preprocessor.preprocess_dataframe(data_baru)
+                st.write("Setelah Preprocessing:", data_baru)
+            except Exception as e:
+                st.error(f"Terjadi error saat preprocessing: {e}")
+                st.stop()
+
             # sinopsis_tfidf = loaded_vectorizer.transform(data_baru['Lemmatized'].apply(' '.join))
             sinopsis_tfidf = loaded_vectorizer.transform(data_baru)
             st.write("TF-IDF Shape:", sinopsis_tfidf.shape)
