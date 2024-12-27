@@ -40,7 +40,7 @@ if st.button("Prediksi Genre"):
         
         # Preprocessing data baru
         try:
-            sst.write("Input DataFrame sebelum preprocessing:", data_baru)
+            st.write("Input DataFrame sebelum preprocessing:", data_baru)
             try:
                 data_baru = preprocessor.preprocess_dataframe(data_baru)
                 st.write("Setelah Preprocessing:", data_baru)
