@@ -30,6 +30,7 @@ if st.button("Prediksi Genre"):
     if sinopsis.strip():
         # Membuat DataFrame dari input pengguna
         data_baru = pd.DataFrame({'Sinopsis': [sinopsis]})
+        st.write("hai")
         
         # Preprocessing data baru
         try:
