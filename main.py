@@ -43,4 +43,4 @@ if st.button("Prediksi Genre"):
             
             st.success(f"Genre yang diprediksi: **{prediksi[0]}**")
         except Exception as e:
-            st
+            st.error("Maaf")
