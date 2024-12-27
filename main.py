@@ -38,7 +38,8 @@ if st.button("Prediksi Genre"):
             # data_baru = preprocessor.preprocess_dataframe(data_baru)
             # st.write("Setelah Preprocessing:", data_baru)
         
-            sinopsis_tfidf = loaded_vectorizer.transform(data_baru['Lemmatized'].apply(' '.join))
+            # sinopsis_tfidf = loaded_vectorizer.transform(data_baru['Lemmatized'].apply(' '.join))
+            sinopsis_tfidf = loaded_vectorizer.transform(data_baru)
             st.write("TF-IDF Shape:", sinopsis_tfidf.shape)
         
             prediksi = loaded_model.predict(sinopsis_tfidf.toarray())
